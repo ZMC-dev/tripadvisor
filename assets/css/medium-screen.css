@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+
+  header span {
+    display: none;
+  }
+  .right-header {
+    width: 274px;
+  }
+  .pictures {
+    height: 278px;
+  }
+  .pic-left {
+    width: calc(70% - 1px);
+  }
+  .pic-right {
+    width: calc(30% - 1px);
+  }
+  .description {
+    width: 100%;
+  }
+  .left-header > div {
+    width: 280px;
+  }
+}
+
+
+/* le texte des bouttons header disparaissent  => ça marche

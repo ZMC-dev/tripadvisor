@@ -1,0 +1,50 @@
+@media (max-width: 768px) {
+  
+  .left-header,
+  .right-header {
+    display: none;
+  }
+
+  .pic-left {
+    width: 100%;
+  }
+
+  .pic-right {
+    display: none;
+  }
+
+  .pictures {
+    margin: 0 -26px;
+  }
+
+  .scroll-section {
+    height: 500px;
+    display: inherit;
+  }
+
+  .right-scroll article {
+    height: 100%;
+    width: 100%;
+  }
+
+  .left-scroll {
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .right-scroll {
+    height: 130vw;
+    width: 100%;
+  }
+
+}
+
+
+
+/* 
+-menu nav se met en carousel
+-le boutons header disparaissent 
+-bouton connectez vous devient bg blan sans border avec hover
+-on voit juste la pic-right
+-caroussel => rigth-scroll en dessous left scroll

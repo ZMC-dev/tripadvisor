@@ -1,0 +1,40 @@
+@media (max-width: 1184px) {
+ 
+  .nav-list .hidden-when-large {
+    display: inherit;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
+  .nav-list article {
+    flex: none;
+    width: calc(25% - 30px / 4);
+    height: 68px;
+  }
+
+  .nav-list article:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .nav-list article:not(:nth-child(4n)) {
+    margin-right: 10px;
+  }
+
+  .nav-list article {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .pictures {
+    height: 374px;
+  }
+
+
+}
+
+/* le nav se met en 2 rangées 
