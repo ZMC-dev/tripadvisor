@@ -3,19 +3,19 @@ const formData = require("form-data");
 const Mailgun = require("mailgun.js");
 const mailgun = new Mailgun(formData);
 
-const axios = require("axios");
+
 
 require("dotenv").config();
 
 const cors = require("cors");
-const mg = mailgun.client({
-  username: "Zoila",
-  key: process.env.API_KEY
-});
-
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const mg = mailgun.client({
+  username: "Zoila Montes Capa",
+  key: process.env.API_SECRET
+});
 
 app.post("/send-email", (req, res) => {
   console.log(req.body);

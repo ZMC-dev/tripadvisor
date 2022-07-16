@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script src="https://kit.fontawesome.com/4d4b993f4a.js" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="./assets/css/reset.css" />
-  <link rel="stylesheet" href="./assets/css/fonts.css" />
+
   <link rel="stylesheet" href="./assets/css/style.css" />
 
+  <!-- import de mon fichier js -->
+  <script src="./assets/JS/script.js"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <title>Tripadvisor</title>
 </head>
@@ -87,31 +89,31 @@
           </article>
           <article>
             <div>
-              <img src="./assets/img/eiffel-tower.jpeg" alt="">
+              <img src="./assets/img/louvre.jpeg" alt="">
               <div class="circle">
                 <i class="fa-solid fa-heart"></i>
               </div>
             </div>
             <div>
-              <p>Eiffel Tower</p>
+              <p>Musée du Louvre</p>
               <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
             </div>
           </article>
           <article>
             <div>
-              <img src="./assets/img/eiffel-tower.jpeg" alt="">
+              <img src="./assets/img/arc-de-triomphe.jpeg" alt="">
               <div class="circle">
                 <i class="fa-solid fa-heart"></i>
               </div>
             </div>
             <div>
-              <p>Eiffel Tower</p>
+              <p>Arc du triomphe</p>
               <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
             </div>
           </article>
           <article>
             <div>
-              <img src="./assets/img/eiffel-tower.jpeg" alt="">
+              <img src="./assets/img/arc-de-triomphe.jpeg" alt="">
               <div class="circle">
                 <i class="fa-solid fa-heart"></i>
               </div>
@@ -213,37 +215,37 @@
             </div>
           </div>
           <div>
-            <p>Eiffel Tower</p>
+            <p>Hotel Bristol</p>
             <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
           </div>
         </article>
         <article>
           <div>
-            <img src="./assets/img/eiffel-tower.jpeg" alt="">
+            <img src="./assets/img/bristol.jpeg" alt="">
             <div class="circle">
               <i class="fa-solid fa-heart"></i>
             </div>
           </div>
           <div>
-            <p>Eiffel Tower</p>
+            <p>Hotel Four Seasons</p>
             <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
           </div>
         </article>
         <article>
           <div>
-            <img src="./assets/img/eiffel-tower.jpeg" alt="">
+            <img src="./assets/img/four-seasons.jpeg" alt="">
             <div class="circle">
               <i class="fa-solid fa-heart"></i>
             </div>
           </div>
           <div>
-            <p>Eiffel Tower</p>
+            <p>Hotel La Réserve</p>
             <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
           </div>
         </article>
         <article>
           <div>
-            <img src="./assets/img/eiffel-tower.jpeg" alt="">
+            <img src="./assets/img/hotel.jpeg" alt="">
             <div class="circle">
               <i class="fa-solid fa-heart"></i>
             </div>
@@ -341,37 +343,37 @@
       
       <article>
         <div>
-          <img src="./assets/img/eiffel-tower.jpeg" alt="">
+          <img src="./assets/img/frenchie.jpeg" alt="">
           <div class="circle">
             <i class="fa-solid fa-heart"></i>
           </div>
         </div>
         <div>
-          <p>Eiffel Tower</p>
+          <p>Restaurant Frenchie</p>
           <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
         </div>
       </article>
       <article>
         <div>
-          <img src="./assets/img/eiffel-tower.jpeg" alt="">
+          <img src="./assets/img/faubourg.jpeg" alt="">
           <div class="circle">
             <i class="fa-solid fa-heart"></i>
           </div>
         </div>
         <div>
-          <p>Eiffel Tower</p>
+          <p>Restaurant Faubourg</p>
           <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
         </div>
       </article>
       <article>
         <div>
-          <img src="./assets/img/eiffel-tower.jpeg" alt="">
+          <img src="./assets/img/verjus.jpeg" alt="">
           <div class="circle">
             <i class="fa-solid fa-heart"></i>
           </div>
         </div>
         <div>
-          <p>Eiffel Tower</p>
+          <p>Restaurant Verjus</p>
           <i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i><i class="fa-solid fa-circle"></i>
         </div>
       </article>
@@ -462,18 +464,56 @@
     </div>
   </section>
 </div>
+<section class="forum">
+  <div id="forum-text">
+    <h3>En tendance sur les forums</h3>
+    <p>Tout Afficher</p>
+  </div>
+  <div id="forum-square">
+    <article>
+      <h4>Mode de transport Paris</h4>
+      <p></p>
+      <img>
+    </article>
+    <article>
+      <h4>Billets RER etc...</h4>
+      <p></p>
+      <img>
+    </article>
+    <article>
+      <h4>Transfer de CDG vers Paris taxi?</h4>
+      <p></p>
+      <img>
+    </article>
+  </div>
+</section>
 
-<div class="form">
-<form>      
-  <input name="name" type="text" class="feedback-input" placeholder="Nom" />   
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-  <input type="submit" value="SUBMIT"/>
-</form>
-</div>
+<section class="form-section">
+  <button id="btn-contact-form">Contactez-nous</button>
+  <div class="div-contact-form">
+    <h2>Formulaire de contact</h2>
+    <form id="contact-form">      
+    <input name="name" type="text" class="name" placeholder="Nom" />   
+    <input name="email" type="text" class="email" placeholder="Email" />
+    <input name="subject" type="text" class="subject" placeholder="Sujet" />
+    <textarea name="text" class="text" placeholder="Message"></textarea>
+    <input type="submit" value="Envoyer"/>
+    </form>
+  </div>
+</section>
 
 </main>
 </footer>
+<div>
+  <img src="./assets/img/mini-logo.svg" alt="mini-logo">
+  <p>© 2022 TripAdvisor LLC Tous droits réservés.</p>
+  <p>Conditions d'utilisationConfidentialité et utilisation des cookiesAccord d'utilisation des cookies</p>
+  <p>Plan du siteFonctionnement du site></p>
+  <p>Contactez-nous</p>
+  <p>Cette version de notre site internet s'adresse aux personnes parlant français en France. Si vous habitez un autre pays ou une autre région, merci de choisir la version de Tripadvisor appropriée pour votre pays ou région dans le menu déroulant. plus
+  </p>
+</div>
+
 </footer>
 </body>
 </html>
